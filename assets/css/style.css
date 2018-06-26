@@ -1,0 +1,54 @@
+body {
+    
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    min-width: 375px;
+}
+
+section {
+    box-sizing: border-box;
+    background-color: #f4fef4;
+    margin: 16px 0;
+}
+
+header::after, section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px 0 10px 0;
+    background-color:#666666;
+    color: #cccccc;
+    text-align: center;
+    font-size: 12px;
+    border-top: 3px solid #ccc;
+}
+
+.wf1 {
+    border: 1px solid #333;
+    background-color: #ddd;
+}
+
+.wf2 {
+    border: 1px solid #333;
+    background-color: #ccc;
+}
+
+.wf3 {
+    border: 1px solid #333;
+    background-color: #777;
+}
+
+@media screen AND (max-width: 920px) {
+
+}
