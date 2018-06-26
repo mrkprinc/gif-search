@@ -69,7 +69,10 @@ $(document).ready(function() {
     $('#div-searchResults').on('click', 'img', function() {
 
         var thisImage = $(this);
+
         var state = thisImage.attr('data-state');
+        console.log(state);
+
         if(state === 'stop') {
             thisImage.attr('src', thisImage.attr('data-goURL'));
             thisImage.attr('data-state', 'go');
