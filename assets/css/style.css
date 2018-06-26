@@ -4,6 +4,9 @@ body {
 
 header {
     text-align: center;
+    color: #997099;
+    font-size: 26px;
+    font-family: Helvetica;
 }
 
 main {
@@ -12,8 +15,17 @@ main {
 
 section {
     box-sizing: border-box;
-    background-color: #f4fef4;
+    background-color: #fff1ff;
+    box-shadow: #997099 0px -1px 3px;
     margin: 16px 0;
+}
+
+#div-searchResults {
+    margin-bottom: 45px;   
+}
+
+.gifImg {
+    border: 1px solid #333;
 }
 
 header::after, section::after {
@@ -32,21 +44,6 @@ footer {
     text-align: center;
     font-size: 12px;
     border-top: 3px solid #ccc;
-}
-
-.wf1 {
-    border: 1px solid #333;
-    background-color: #ddd;
-}
-
-.wf2 {
-    border: 1px solid #333;
-    background-color: #ccc;
-}
-
-.wf3 {
-    border: 1px solid #333;
-    background-color: #777;
 }
 
 @media screen AND (max-width: 920px) {
