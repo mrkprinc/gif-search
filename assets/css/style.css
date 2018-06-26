@@ -1,12 +1,12 @@
 body {
-    
+    color: #6c757d;
+    font-family: Helvetica;
 }
 
 header {
     text-align: center;
     color: #997099;
     font-size: 26px;
-    font-family: Helvetica;
 }
 
 main {
@@ -28,11 +28,17 @@ section {
     border: 1px solid #333;
 }
 
-header::after, section::after {
+.span-rating {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* header::after, section::after {
     content: "";
     display: table;
     clear: both;
-}
+} */
 
 footer {
     position: fixed;

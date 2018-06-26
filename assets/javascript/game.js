@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var searchTerms = ['Aquaria', 'Bianca DelRio', 'Miss Vanjie'];
+    var searchTerms = ['Violet Chachki', 'Bianca DelRio', 'Miss Vanjie'];
 
     // API key yO5ZHdtVykuL4MmuX9DDYFu58J0db9lP
 
@@ -39,7 +39,9 @@ $(document).ready(function() {
 
             arr.forEach(function(thisgif) {
                 var newDiv = $('<div>');
-                newDiv.addClass('div-gif p-3');
+                newDiv
+                    .addClass('div-gif p-3')
+                    .html("<span class='span-rating'>Rating: " + thisgif.rating.toUpperCase() + '</span>');
 
                 var gifImg = $('<img>');
                 gifImg
@@ -48,7 +50,7 @@ $(document).ready(function() {
                     .attr('data-goURL', thisgif.images.fixed_height.url)
                     .attr('data-state', 'stop')
                     .addClass('gifImg')
-                    .appendTo(newDiv);
+                    .prependTo(newDiv);
 
                 newDiv.appendTo($('#div-results'));
             })
