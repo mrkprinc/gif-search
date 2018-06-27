@@ -24,6 +24,10 @@ section {
     margin-bottom: 45px;   
 }
 
+.hide {
+    display: none;
+}
+
 .gifImg {
     border: 1px solid #333;
 }

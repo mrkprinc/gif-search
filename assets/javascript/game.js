@@ -22,6 +22,7 @@ $(document).ready(function() {
     $('#div-buttons').on('click', '.searchButton', function() {
 
         $('#div-results').empty();
+        $('#div-searchResults').removeClass('hide');
 
         var term = $(this).text();
         var queryURL = 'https://api.giphy.com/v1/gifs/search?api_key=yO5ZHdtVykuL4MmuX9DDYFu58J0db9lP&limit=10&q=' + '@rupaulsdragrace ' + term;
@@ -30,7 +31,6 @@ $(document).ready(function() {
             url: queryURL,
             method: 'GET'
         }).then(function(result) {
-            console.log(result.data);
             var arr = result.data;
 
             if(arr.length === 0) {
@@ -69,9 +69,7 @@ $(document).ready(function() {
     $('#div-searchResults').on('click', 'img', function() {
 
         var thisImage = $(this);
-
         var state = thisImage.attr('data-state');
-        console.log(state);
 
         if(state === 'stop') {
             thisImage.attr('src', thisImage.attr('data-goURL'));
